@@ -140,9 +140,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4CFF881A2E7E0C0B006F2854 /* src */ = {
+		4CFF881A2E7E0C0B006F2854 /* Source */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = src;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4CFF88272E7E0C41006F2854 /* Models */ = {
@@ -236,7 +236,7 @@
 				4CFF88322E7E0C5D006F2854 /* Resources */,
 				4CFF882B2E7E0C4A006F2854 /* Images */,
 				4CFF88272E7E0C41006F2854 /* Models */,
-				4CFF881A2E7E0C0B006F2854 /* src */,
+				4CFF881A2E7E0C0B006F2854 /* Source */,
 				4CFF88462E7E0E93006F2854 /* Frameworks */,
 				4CFF88192E7E0C0B006F2854 /* Products */,
 			);
@@ -330,7 +330,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4CFF881A2E7E0C0B006F2854 /* src */,
+				4CFF881A2E7E0C0B006F2854 /* Source */,
 				4CFF88272E7E0C41006F2854 /* Models */,
 				4CFF882B2E7E0C4A006F2854 /* Images */,
 				4CFF88322E7E0C5D006F2854 /* Resources */,
