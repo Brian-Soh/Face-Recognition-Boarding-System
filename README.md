@@ -4,9 +4,11 @@
 In this project I created an airport terminal boarding system which operates under the alias Air Zenith. The boarding system leverages a Haar Cascade classifier for quick face detection and passes the frame into a Res-Net based convolutional neural network (CNN) which creates a 128-dimension embedding of it. The embedding is them compared to a database of passengers and if a match is found, the passenger's boarding pass data is loaded from an AWS Relational Database Service (RDS) (Postgres) and they are marked present.
 
 ## Tree View of Project
-Face-Recognition-Boarding-System/
-├── Images/
-│   ├── 192894.png (Elon Musk)
+
+```text
+Face-Recognition-Boarding-System/ 
+├── Images/ 
+│   ├── 192894.png (Elon Musk) 
 │   ├── 390439.png
 │   └── 490303.png
 ├── Models/
@@ -21,6 +23,7 @@ Face-Recognition-Boarding-System/
 │   ├── main.h
 │   ├── main.cpp
     └── insertData.cpp
+```
 
 The Haar Cascade classifier can be found in the `Models` folder while each component of the GUI and the AWS RDS pem key (public key which verifies server) can be found in the /Resources. 
 
