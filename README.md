@@ -20,8 +20,8 @@ Face-Recognition-Boarding-System/
 │   ├── sidebar2.png
 │   └── us-west-2-bundle.pem
 └── src/
-│   ├── main.h
-│   ├── main.cpp
+    ├── main.h
+    ├── main.cpp
     └── insertData.cpp
 ```
 
