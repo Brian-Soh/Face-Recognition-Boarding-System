@@ -9,8 +9,8 @@ In this project I created an airport terminal boarding system which operates und
 Face-Recognition-Boarding-System/ 
 ├── Images/ 
 │   ├── 192894.png (Elon Musk) 
-│   ├── 390439.png
-│   └── 490303.png
+│   ├── 390439.png (Jeff Bezos)
+│   └── 490303.png (Mark Zuckerberg)
 ├── Models/
 │   └── haarcascade_frontalface_default.xml
 └── Resources/
