@@ -122,9 +122,10 @@ int main() {
     }
     
     Mat img;
-    VideoCapture cap(1);
+    VideoCapture cap(0);
     Rect roi(102, 330, 960, 540);
     Rect sidebarRoi(1164, 0, 756, 1080);
+    Rect faceRoi(1362, 265.9, 360, 360);
     
     int modeType = 0;
     std::array<int, 4> buffers = {0, 0, 0, 0};
@@ -158,6 +159,10 @@ int main() {
         
         // Render data
         if (modeType == 3) {
+            Mat face = imread("Images/" + dict["id"] + ".png");
+            resize(face, face, Size(360, 360));
+            face.copyTo(bg(faceRoi));
+            
             Size textSize = getTextSize(dict["name"], FONT_HERSHEY_SIMPLEX, 2.0, 3, 0);
             
             Point center(1542, 700);
@@ -212,11 +217,12 @@ int main() {
                 auto face_dist = fr.attr("face_distance")(encodings, first_enc);
                 int matchIndex = np.attr("argmin")(face_dist).cast<int>();
                 string id = ids[matchIndex];
-                string query = "SELECT * FROM public.passengers WHERE id=" + id;
+                string query = "SELECT * FROM public.boarding_system WHERE id=" + id;
                 
                 pqxx::work tx{*c};
                 auto entry = tx.exec(query);
                 for (auto const& e: entry) {
+                    dict["id"] = e["id"].as<string>();
                     dict["name"] = e["name"].as<string>();
                     dict["seat"] = e["seat"].as<string>();
                     dict["class"] = e["class"].as<string>();

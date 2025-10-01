@@ -27,7 +27,7 @@
 //        pqxx::connection c{conn};
 //        if (!c.is_open()) throw runtime_error("DB not open");
 //
-//        c.prepare("ins", "INSERT INTO public.passengers(id, name, seat, class) VALUES($1, $2, $3, $4)");
+//        c.prepare("ins", "INSERT INTO public.boarding_system(id, name, seat, class) VALUES($1, $2, $3, $4)");
 //
 //        vector<vector<string>> passengers = {
 //            {"192894", "Elon Musk", "1A", "First"},
